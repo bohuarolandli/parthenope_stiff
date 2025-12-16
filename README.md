@@ -8,6 +8,11 @@ The original PArthENoPE 3.0 code is modified to accommodate new ingredients of B
 
 Some of the key nuclear reaction rates are also updated, which affect the primordial helium and deuterium abundances ($Y_\mathrm{P}$ and D/H).
 
+## Cobaya interface
+
+We provide two interfaces, "par_stiff.py" and "par_stiff_err.py" for Cobaya inference pipelines. Each of the python scripts serves as a theory block.
+The errors in **four** key nuclear reaction rates (Nos. 12, 20, 28, 29) are taken as free parameters in "par_stiff_err.py".
+
 ## GUI
 
 For the PArthENoPE GUI, we modify the original code so that this version runs on Mac computers with Apple silicon that does not support the original PySide2 package.
